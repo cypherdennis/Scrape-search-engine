@@ -81,7 +81,6 @@ const sanitize = (str) => {
   return div.innerHTML;
 };
 
-// input typing with debounce
 searchInput.addEventListener(
   "input",
   debounce((e) => {
@@ -89,17 +88,16 @@ searchInput.addEventListener(
   }, 400)
 );
 
-// immediate search on Enter
 searchInput.addEventListener("keydown", (e) => {
   if (e.key === "Enter") {
     fetchWiki(e.target.value.trim());
   }
 });
 
-// click search button
 searchBtn.addEventListener("click", () => {
   const query = searchInput.value.trim();
   if (query) {
     fetchWiki(query);
   }
 });
+
