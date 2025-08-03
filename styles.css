@@ -5,7 +5,7 @@
 } 
 
 body {
-    background: url("images/simon-lee-M-6QQXJ8AG4-unsplash.jpg");
+    background: url("simon-lee-M-6QQXJ8AG4-unsplash.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
@@ -139,5 +139,6 @@ input {
     width: 80%;
     margin: 20px auto;
     }
+
 
 }
