@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0; 
+} 
+
+body {
+    background: url("images/simon-lee-M-6QQXJ8AG4-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    font-size: 81.25%;
+    margin: 0;
+    padding: 0;
+}
+
+.info {
+    margin: 10px;
+    font-size: 30px;
+    width: fit-content;
+}
+
+.info i {
+    cursor: pointer;
+}
+
+#logo {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.747);
+    font-size: 50px;
+    margin-top: 5%;
+}
+
+.search-area {
+    margin-top: 30px;
+    width: 100%;
+}
+
+input {
+    width: 50%;
+    height: 40px;
+    display: inline-block;
+    border-radius: 30px;
+    padding: 10px;
+    border: none;
+    font-size: 17px;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.205);
+    margin: 5%;
+    padding: 5%;
+    border-radius: 30px;
+}
+
+#search-logo {
+    width: auto;
+    height: 40px;
+    padding: 10px;
+    border: none;
+    border-radius: 30px;
+    font-size: 17px;
+    margin: 0;
+    color: white;
+    cursor: pointer;
+    margin-left: 2px;
+}
+
+#search-logo:hover {
+    color: black;
+    background-color: white;
+    transition: 0.3s ease-in;
+    
+}
+
+.guide-info {
+    display: none;
+    background-color: rgba(255, 255, 255, 0.747);
+    padding: 20px;
+    position: fixed;
+    left: 25%;
+    width: 50%;
+    margin: 20px auto;
+}
+
+#exit-info {
+    color: red;
+    font-size: 20px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.747);
+    padding: 5px;
+    cursor: pointer;
+}
+
+#content-display {
+    display: none;
+    background-color: azure;
+    padding: 15px;
+    font-size: 17px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+#content-display div {
+    margin: 10px;
+}
+
+@media (max-width: 600px) {
+    body {
+    height: 120vh;
+    }
+
+    .info {
+    left: 80%;
+    }
+
+    #logo {
+        font-size: 30x;
+    } 
+
+    .content {
+    margin: 20% 0 0 0;
+    background-color: rgba(255, 255, 255, 0);
+    }
+
+    input {
+    width: 60%;
+    height: 25px;
+    font-size: 16px;
+    }
+
+    .guide-info {
+    left: 13%;
+    width: 80%;
+    margin: 20px auto;
+    }
+
+}
